@@ -1,0 +1,21 @@
+name: Docker Check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  docker-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Verify Docker surface
+        run: |
+          if find . -path ./.git -prune -o \( -name 'Dockerfile' -o -name 'docker-compose.yml' -o -name 'docker-compose.yaml' \) -print | grep -q .; then
+            echo "Docker files found; add a real Docker validation step before changing container assets."
+            exit 1
+          fi
+          echo "No Docker files are present in this VS Code theme extension."

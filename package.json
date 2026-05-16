@@ -7,7 +7,7 @@
   "icon": "images/codex-effect-logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Steamforge/codex-effect-vscode"
+    "url": "https://github.com/Attys-syttA/codex-effect-tunable-vscode"
   },
   "galleryBanner": {
     "color": "#0e6b7f",
@@ -18,7 +18,11 @@
     "vscode": "^1.30.0"
   },
   "scripts": {
-    "package": "vsce package"
+    "package": "vsce package",
+    "build": "vsce package",
+    "lint": "node scripts/lint-themes.js",
+    "check:encoding": "node scripts/check-encoding.js",
+    "test:targeted": "node scripts/targeted-regression.js"
   },
   "categories": [
     "Themes"

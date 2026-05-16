@@ -1,4 +1,6 @@
 .vscode/**
+.github/**
+scripts/**
 demo/**
 .vscode-test/**
 .gitignore
