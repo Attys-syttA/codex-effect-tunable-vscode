@@ -1,8 +1,8 @@
 {
-  "name": "codex-effect",
-  "displayName": "Codex Effect",
-  "description": "🛸 A dark sci-fi color theme inspired by Mass Effect",
-  "publisher": "steamforge",
+  "name": "codex-effect-tunable",
+  "displayName": "Codex Effect Tunable",
+  "description": "A tunable dark sci-fi color theme based on Codex Effect",
+  "publisher": "local-codex",
   "license": "MIT",
   "icon": "images/codex-effect-logo.png",
   "repository": {
@@ -13,30 +13,52 @@
     "color": "#0e6b7f",
     "theme": "dark"
   },
-  "version": "1.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.30.0"
   },
   "scripts": {
-    "start": "vsce"
+    "package": "vsce package"
   },
   "categories": [
     "Themes"
   ],
   "keywords": [
     "VSCode",
-    "Themes"
+    "Themes",
+    "Codex",
+    "Tunable"
   ],
   "contributes": {
     "themes": [
       {
-        "label": "Codex Effect",
+        "label": "Codex Effect Tunable Cyan",
         "uiTheme": "vs-dark",
-        "path": "./themes/codex-effect.json"
+        "path": "./themes/codex-effect-tunable-cyan.json"
+      },
+      {
+        "label": "Codex Effect Tunable Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codex-effect-tunable-blue.json"
+      },
+      {
+        "label": "Codex Effect Tunable Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codex-effect-tunable-green.json"
+      },
+      {
+        "label": "Codex Effect Tunable Amber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codex-effect-tunable-amber.json"
+      },
+      {
+        "label": "Codex Effect Tunable Rose",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codex-effect-tunable-rose.json"
       }
     ]
   },
-  "dependencies": {
-    "vsce": "^1.55.0"
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.1"
   }
 }

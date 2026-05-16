@@ -1,17 +1,38 @@
-# Codex Effect Theme for [Visual Studio Code](http://code.visualstudio.com)
+# Codex Effect Tunable
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/steamforge.codex-effect.svg)](https://marketplace.visualstudio.com/items?itemName=steamforge.codex-effect)
+Local VS Code theme extension based on the original
+[Codex Effect](https://github.com/Steamforge/codex-effect-vscode) theme by Steamforge.
 
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/steamforge.codex-effect.svg)](https://marketplace.visualstudio.com/items?itemName=steamforge.codex-effect)
+This fork keeps the dark sci-fi look, but exposes multiple tone variants as separate
+themes:
 
-[![Rating](https://vsmarketplacebadge.apphb.com/rating/steamforge.codex-effect.svg)](https://marketplace.visualstudio.com/items?itemName=steamforge.codex-effect)
+- Codex Effect Tunable Cyan
+- Codex Effect Tunable Blue
+- Codex Effect Tunable Green
+- Codex Effect Tunable Amber
+- Codex Effect Tunable Rose
 
-> 🛸 A dark sci-fi color theme
+## Development
 
-![Screenshot](https://raw.githubusercontent.com/Steamforge/codex-effect-vscode/master/images/screenshot.png)
+Install dependencies:
 
-This theme is inspired by all the cool futuristic user interfaces in movies and games. The main inspiration comes from Tron, Iron Man and Mass Effect.
+```powershell
+npm install
+```
 
-## Installing
+Package a VSIX:
 
-This theme can be downloaded from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=steamforge.codex-effect)
+```powershell
+npx vsce package
+```
+
+Install the generated VSIX from VS Code:
+
+```powershell
+code --install-extension .\codex-effect-tunable-0.1.0.vsix
+```
+
+## Upstream
+
+The original repository is kept as the `upstream` remote for reference. This local
+version is renamed so it can be installed beside the original theme without replacing it.
