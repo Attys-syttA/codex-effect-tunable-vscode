@@ -13,7 +13,7 @@
     "color": "#0e6b7f",
     "theme": "dark"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.30.0"
   },
@@ -55,6 +55,21 @@
         "label": "Codex Effect Tunable Rose",
         "uiTheme": "vs-dark",
         "path": "./themes/codex-effect-tunable-rose.json"
+      },
+      {
+        "label": "Codex Effect Tunable Matrix",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codex-effect-tunable-matrix.json"
+      },
+      {
+        "label": "Codex Effect Tunable Terminator",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codex-effect-tunable-terminator.json"
+      },
+      {
+        "label": "Codex Effect Tunable E-SPER",
+        "uiTheme": "vs-dark",
+        "path": "./themes/codex-effect-tunable-e-sper.json"
       }
     ]
   },

@@ -11,6 +11,9 @@ themes:
 - Codex Effect Tunable Green
 - Codex Effect Tunable Amber
 - Codex Effect Tunable Rose
+- Codex Effect Tunable Matrix
+- Codex Effect Tunable Terminator
+- Codex Effect Tunable E-SPER
 
 ## Development
 
@@ -29,7 +32,7 @@ npx vsce package
 Install the generated VSIX from VS Code:
 
 ```powershell
-code --install-extension .\codex-effect-tunable-0.1.0.vsix
+code --install-extension .\codex-effect-tunable-0.2.0.vsix
 ```
 
 ## Upstream
